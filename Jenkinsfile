@@ -4,9 +4,9 @@ pipeline {
         stage('compile') {
 	   steps {
                 echo 'compiling..'
-		git url: 'https://github.com/sandipdabre/devops_project'
+		git url: 'https://github.com/dineshyuvaraja/jenkins1.git'
 		sh script: '/opt/apache-maven-3.8.4/bin/mvn compile'
-           }
+	   }
         }
         stage('codereview-pmd') {
 	   steps {
